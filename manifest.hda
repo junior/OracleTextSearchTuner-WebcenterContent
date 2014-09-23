@@ -1,0 +1,16 @@
+<?hda version="11.1.1.8.0-2013-07-11 17:07:21Z-r106802" jcharset="UTF8" encoding="utf-8"?>
+@Properties LocalData
+ComponentName=OracleTextSearchTuner
+CreateDate=12/12/13 5:01 PM
+blDateFormat=M/d{/yy}{ h:mm[:ss]{ a}}!mAM,PM!tAmerica/Los_Angeles
+blFieldTypes=CreateDate date
+@end
+@ResultSet Manifest
+2
+entryType
+location
+component
+OracleTextSearchTuner/OracleTextSearchTuner.hda
+componentExtra
+OracleTextSearchTuner/readme.txt
+@end
