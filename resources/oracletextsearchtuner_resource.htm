@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+OracleTextSearchTuner staticResTable
+</title></head>
+<body>
+<@table OracleTextSearchTuner_IndexerRules@>
+<table border=1><caption><strong>
+
+<tr>
+<td>Name</td><td>Values</td><td>ComputeAtInit</td>
+</tr>
+
+<tr>
+	<td>(ORACLETEXTSEARCH)OracleTextMemory</td>
+	<td>1024M</td>
+	<td></td>
+</tr>
+<tr>
+	<td>(ORACLETEXTSEARCH)OracleTextSyncOption</td>
+	<td>MANUAL</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>(ORACLETEXTSEARCH)IndexRebuildParallelDegree</td>
+	<td>4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>(ORACLETEXTSEARCH)FastOptimizationInterval</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>(ORACLETEXTSEARCH)RebuildOptimizationInterval</td>
+	<td>50000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>(ORACLETEXTSEARCH)OracleTextAdditionalFullTextParameters</td>
+	<td>stoplist CUSTOM_SPL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>(ORACLETEXTSEARCH)OracleFullTextPreferenceTable</td>
+	<td>oftId:oftName:oftType:oftAttributes
+		IdcLexer:BASIC_LEXER:Lexer:printjoins=-_
+		IdcStore:MULTI_COLUMN_DATASTORE:DataStore:columns=*
+		</td>
+	<td></td>
+</tr>
+</table>
+
+<@end@>
+</body>
+</html>
