@@ -1,0 +1,49 @@
+<?hda version="11.1.1.8.0-2013-07-11 17:07:21Z-r106802" jcharset="UTF8" encoding="utf-8"?>
+@Properties LocalData
+ComponentName=OracleTextSearchTuner
+blDateFormat=M/d{/yy}{ h:mm[:ss]{ a}}!mAM,PM!tAmerica/Los_Angeles
+classpathorder=-10
+componentTags=oracle,database,ateam
+hasPreferenceData=0
+preventAdditionalComponentDowngrade=0
+version=1.2 (2013-12-12)
+@end
+@ResultSet ClassAliases
+3
+classname
+location
+loadOrder
+@end
+@ResultSet Filters
+4
+type
+location
+parameter
+loadOrder
+@end
+@ResultSet ResourceDefinition
+4
+type
+filename
+tables
+loadOrder
+resource
+resources/oracletextsearchtuner_resource.htm
+null
+10
+query
+resources/oracletextsearchtuner_query.htm
+OracleTextSearchTuner_Queries
+10
+@end
+@ResultSet MergeRules
+4
+fromTable
+toTable
+column
+loadOrder
+OracleTextSearchTuner_IndexerRules
+IndexerRules
+Name
+10
+@end
