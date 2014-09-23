@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+OracleTextSearchTuner query</title></head>
+<body>
+
+<@table OracleTextSearchTuner_Queries@>
+<table border=1><caption><strong>Query Definition Table</strong></caption>
+<tr>
+	<td>name</td><td>queryStr</td><td>parameters</td>
+</tr>
+<tr>
+	<td>(ORACLE.CALLABLE)CoracleTextCreateShadowIndex</td>
+	<td>{call CTX_DDL.CREATE_SHADOW_INDEX(?, ?, ?)}</td>
+	<td>indexName varchar
+  		indexParameters varchar
+  		indexRebuildParallelDegree:2 int</td>
+</tr>
+<tr>
+	<td>(ORACLE.CALLABLE)CoracleTextSyncIndex</td>
+	<td>{call CTX_DDL.SYNC_INDEX(?, ?, NULL, ?, ?)}</td>
+	<td>indexName varchar
+  		memory:300M varchar
+  		parallelDegree:2 int
+  		maxTime:15 int</td>
+</tr>
+<tr>
+	<td>(ORACLE.CALLABLE)CoracleTextOptimizeIndex</td>
+	<td>{call CTX_DDL.OPTIMIZE_INDEX(?, ?, parallel_degree => ?)}</td>
+	<td>indexName varchar
+  		optLevel:FULL varchar
+  		parallelDegree:2 int</td>
+</tr>
+</table>
+<@end@>
+</body>
+</html>
